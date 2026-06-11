@@ -14,14 +14,14 @@ let calc = (present,total)=>{
   return per;
 }
 
-
+//calculate req days
 let reqDays = (present, total,rperr)=>{
   let req = (rperr*total - 100*present)/(100-rperr);
   return req;
 }
 
 
-//claculate rest days
+//calculate rest days
 let restDays = (present,total,rperr)=>{
   let rest = (100*present-rperr*total)/rperr;
   return rest;
